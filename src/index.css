@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  .animate-fade-in-slow {
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  @keyframes textGlow {
+    0% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+    50% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); }
+    100% { text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+  }
+  
+  .animate-text-glow {
+    animation: textGlow 2s infinite alternate ease-in-out;
+  }
+  
